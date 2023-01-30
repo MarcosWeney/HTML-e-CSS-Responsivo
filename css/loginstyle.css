@@ -1,0 +1,154 @@
+header{
+    width: 100%;
+    display: inline-block;
+}
+form{
+    margin-bottom: 4em;
+}
+
+/* responsável pelo primeiro menu e logo do site */
+
+.top-header-login{
+    background-color: #1c609e;
+
+}
+
+.top-header-login h1{
+    text-align: center;
+    padding: 0.4em;
+    background-color: white;
+    color: #1c609e;
+    letter-spacing: 0.7em;
+    font-size: 2em;
+    width: 100%;
+}
+
+
+
+.top-nav-login a {
+    background-color: #1c609e;
+    width: 100%;
+    display: inline-block;
+    height: 1em;
+    line-height: 1em;
+    padding: 1em;
+    font-size: 0.9em;
+    text-align: center;
+}
+.top-nav-login a:hover{
+    background-color: #6b94c5;
+}
+
+.top-content-login{
+    width: 500px;
+    margin:  3em auto;
+    text-align: center;
+    
+}
+.mid-content-login{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+    width: 500px;
+
+}
+.login{
+    width: 100%;
+    margin-left: 0%;
+}
+.input-text{
+    width: 40%;
+    height: 2em;
+    border-radius: 8px;
+}
+.big{
+    width: 80%;
+}
+.col-2{
+    margin-bottom: 1.5em;
+    width: 30em;
+}
+.col-2 p {
+    margin-top: 0% ;
+    font-size: .8em;
+    color: #999999;
+}
+.col-2 label{
+    color: #1c609e;
+    font-size: 1em;
+    display: block;
+    margin-top: 0.2em;
+}
+
+.button-default{
+    width: 90%;
+    height: 3em;
+    border-radius: 8px;
+    background-color:#1c609e ;
+    color: white;
+}
+
+.content-login p {
+    margin: 0%;
+}
+.privacity-login {
+   width: 80%;
+   text-align: center;
+   margin: auto;
+   margin-left: 2EM;
+}
+
+.privacity-login a {
+    color: blue;
+    margin: 0%;
+}
+
+@media screen and (min-width: 35em){
+    .top-header-login h1{
+        float: left;
+        text-align: left;
+        margin-bottom: 0%;
+        margin-top: 1%;
+        width: 30%;
+        display: block;
+        background-color: #1c609e;
+        color: white;
+
+    }
+    .top-header-login{
+        background-color:#1c609e;
+    }
+    .top-nav-login{
+        background: transparent;
+        float: right;
+        margin:auto;
+        width: 50%;
+    }
+    .top-nav-login a{
+        font-size: 1.2em;
+        width: auto;
+        height: 50px;
+        line-height: 50px;
+        padding: 1%;
+        margin-right: 3em;
+        margin-top: 1em;
+        float: right;
+        background-color:#1c609e;
+        color: white;
+    }
+    .top-nav-login a:hover{
+        background-color: white;
+        color: #1c609e;
+
+    }
+
+
+}
+@media screen and (min-width: 55em){
+
+}
+@media screen and (min-width: 75em){
+    }

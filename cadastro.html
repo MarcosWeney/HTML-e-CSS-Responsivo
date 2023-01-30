@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/loginstyle.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link href="icomoon/style.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body>
+    <header class="top-header-login">
+        <h1>NOZZE</h1>
+        <nav class="top-nav-login">
+            <ul>
+                <li><a href="index.html">Voltar para a  pagina principal</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="top-content-login">
+        <h2>Faça seu cadastro</h2>
+        <p>fazendo sua conta você pode reservar seu presente para o casal, além de também poder criar sua própria lista!  </p>
+    </section>
+        <div class="mid-content-login">
+            <div class="content-login">
+                <form action="#" method="POST">
+                    <div class="col-2">
+                        <label for="nome">Nome completo</label>
+                        <input class="input-text big" placeholder="nome completo" type="text" name="nome" id="nome">
+                    </div>
+                    <div class="col-2">
+                        <label for="genero">gênero:</label>
+                        <P>pra gente te conhecer um pouquinho melhor</P>
+                        <label><input type="radio" name="sexo" value="M">Masculino</label>
+                        <label><input type="radio" name="sexo" value="F">Feminino</label>
+                        <label><input type="radio" name="sexo" value="N">Não Informar</label>
+                    </div>
+                    <div class="col-2">
+                        <label for="data_nasc">Data de nascimento</label>
+                        <P>necessário pra identificar a maioridade, no formato DD/MM/AAAA</P>
+                        <input type="date" name="data_nasc" id="data_nasc">
+                    </div>
+                    <div class="col-2">
+                        <label for="CPF">CPF</label>
+                        <P>necessário para fins de cadastro</P>
+                        <input  class="input-text" type="text" name="cpf" \
+                        pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \
+                        title="Digite um CPF no formato: xxx.xxx.xxx-xx">
+                    </div>
+                    <div class="col-2">
+                        <label for="telefone">telefone</label>
+                        <P>caso a gente precise entrar em contato</P>
+                        <input  class="input-text" type="tel" name="telefone" id="telefone">
+                        <label class="label-checkbox"><input type="checkbox" name="receber" value="telefone">Receber notificações por whatsapp</label>
+                    </div>
+                    <div class="col-2">
+                        <label for="email">Email</label>
+                        <P>informe um e-mail válido. Você vai precisar ativar sua conta depois de criar seu cadastro</P>
+                        <input  class="input-text big" type="email" name="email" id="email">
+                        <label class="label-checkbox"><input type="checkbox" name="receber" value="email">Receber notificações por e-mail</label>
+                    </div>
+                    <div class="col-2">
+                        <label for="pass">senha</label>
+                        <P>Uma senha segura por favor</P>
+                        <input  class="input-text" type="password" name="pass" id="pass">              
+                    </div>
+                    
+                </form>
+                <input type="submit" value="Criar seu cadastro " class="button-default">
+                <div class="privacity-login">
+                <p >Não se preocupe, nosso site é seguro! Ao criar o seu cadastro, você concorda com a nossa <a href="#"> política de privacidade</a></p>
+                </div>    
+            </div> 
+        </div>
+    <footer class="footer ">
+        <ul class="footer-menushare">
+            <li><a href="#" class="icon-facebook"><span class="hidden">Facebook</span></a></li>
+            <li><a href="#" class="icon-twitter"><span class="hidden">Twitter</span></a></li>
+            <li><a href="#" class="icon-google-plus"><span class="hidden">Google Plus</span></a></li>
+        </ul>
+        
+        <p>Copyright The NOZZE</p>
+        <p>Site 100% Responsivo e com todos os botões funcionando, fique há vontade para testar!! 
+        </p>
+    </footer>
+</body>
+</html>

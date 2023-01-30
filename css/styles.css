@@ -1,0 +1,398 @@
+
+/* padrões que eu escolhi */
+html{
+    font-family:helvetica, sans-serif;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+    padding: 0em;
+    margin: 0em;
+    font-family: "Overpass";
+    text-align: center;
+    color: #1c609e;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.clearfix:after, .row:after{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+
+
+
+/* responsável pelo primeiro menu e logo do site */
+
+.top-header{
+    background-color: #1c609e;
+
+}
+
+.top-header h1{
+    text-align: center;
+    padding: 0.4em;
+    background-color: white;
+    color: #1c609e;
+    letter-spacing: 0.7em;
+    font-size: 2em;
+    width: 100%;
+}
+
+
+
+.top-nav a {
+    background-color: #1c609e;
+    width: 100%;
+    display: inline-block;
+    height: 1em;
+    line-height: 1em;
+    padding: 1em;
+    font-size: 0.9em;
+    text-align: center;
+}
+.top-nav a:hover{
+    background-color: #6b94c5;
+}
+
+
+/*responsável pela imagem e nome do casal */
+
+.top-content img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: inline-block;
+
+}
+.top-content h2{
+    font-family: "Dancing Script";
+    color: white;
+    margin-top: -2em;
+    margin-bottom: 1em;
+    font-size: 3em;
+}
+
+
+
+
+/* meio do site, 2 titulos e paragrafos */
+.mid-content{
+    padding: 1em;
+    text-align: center;
+    background: #F6F6F6;
+    padding-bottom: 5em;
+    display: block;
+
+}
+.mid-content-tittle{
+    font-size: 1.5em;
+}
+.mid-content p{
+    font-size: 0.8em;
+}
+
+
+
+
+/* Seção dos Produtos */
+
+.iten-image{
+    border-radius: 10px;
+    border-color: #1c609e;
+    border-width: 0.2em;
+    border-style: solid;
+    height: 11.25em;
+    width: 11.25em;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iten-image img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.products-content{
+    margin: 0em;
+    padding: 0em;
+    
+}
+
+
+.iten-product-1{
+    text-align: center;
+    background-color: white;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.iten-product-tittle{
+    font-size: 1.3em;
+    margin: 1em;
+}
+
+.iten-product-subtittle{
+    font-size: 1EM;
+    text-align: center;
+}
+
+.iten-product-link {
+    color: blue;
+    font-size: 1em;
+
+}
+
+ .iten-product-1 p {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+.button{
+    display: inline-block;
+    padding: .8em 2.5em;
+    background: #1c609e;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    margin-top: 1.5em;
+
+
+}
+
+.leaked-button{
+    border-radius: 10px;
+    border-color: #1c609e;
+    border-width: 0.2em;
+    border-style: solid;
+    display: inline-block;
+    padding: .8em 2.5em;
+    background: white;
+    color: #1c609e;
+    text-decoration: none;
+    margin-top: 1.5em;
+
+
+}
+
+/* quem somos / como funciona / devo comprar */
+
+.main-content h3{
+    font-size: 1.5em;
+}
+.main-content p {
+    font-size: .8em;
+}
+.main-content{
+    text-align: center;
+    display: inline-block;
+    background-color: #F6F6F6;
+}
+
+.main-content-iten{
+    padding: 1em;
+}
+
+/* footer */
+
+.footer{
+    background:#1c609e;
+	color: white;
+	text-align:center;
+	padding-bottom:2em;
+    display: block;
+}
+
+.footer-menushare{
+    background:#6b94c5;	
+    padding: .5em;
+}
+
+.footer-menushare li{
+    display: inline-block;
+    margin: 0 1em;
+}
+.footer-menushare a{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+}
+
+.hidden{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: block;
+}
+
+@media screen and (min-width: 35em){
+
+.top-content img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+
+
+
+}
+.top-content{
+    width: 100%;
+    height:48.75em;
+}
+.mid-content article {
+    float: left;
+    width: 44%;
+    margin: 3%;
+}
+.mid-content{
+    height: 10em;
+    text-align: center;
+    background: #F6F6F6;
+    padding-bottom: 5em;
+
+
+}
+.products-content article{
+    float: left;
+    width: 44%; 
+    padding-top: 3em;
+    padding-bottom: 3em;
+    margin: 3%;
+
+}
+.products-content{
+    padding: 0em;
+    width: 100%;
+
+}
+.main-content{
+    width: 100%;
+    padding: 0em;
+}
+.main-content-iten{
+    width: 30%;
+    float: left;
+    padding: 0%;
+    margin: 1.66%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+}
+
+@media screen and (min-width: 55em){
+
+    .top-header h1{
+        float: left;
+        text-align: left;
+        margin-bottom: 0%;
+        margin-top: 1%;
+        width: 30%;
+        display: block;
+
+    }
+    .top-nav{
+        background: transparent;
+        float: right;
+        margin:auto;
+        width: 50%;
+    }
+    
+    .top-nav ul{
+        margin: 0; 
+        padding: 0; 
+
+         
+    }
+    .top-nav li{
+        margin-top: 1%; 
+        padding: 0; 
+    }
+    
+    .top-nav li:hover{
+        background-color: #1c609e;
+        color: white;
+    }
+    
+    
+    .top-nav a{
+        font-size: 1.2em;
+        width: 30%;
+        margin: 1%;
+        height: 50px;
+        line-height: 50px;
+        padding: 0%;
+        float: left;
+        background-color: white;
+        color: #1c609e;
+        
+    }
+    .top-nav a:hover{
+        background-color: #1c609e;
+        color: white;
+
+    }
+    .top-content{
+        display: inline-block;
+    }
+
+}
+@media screen and (min-width: 75em){
+    
+    .top-header, .mid-content, .products-content,  .main-content, .fullsize{
+        width: 65%;
+        margin-left: 35%;
+    }
+    .top-header{
+        display: inline-block;
+        background-color: white;
+        margin-top: 0%;
+    }
+    .top-header h1{
+        text-align: center;
+        margin: 0%;
+        width: 100%;
+        display: block;
+        background-color: #1c609e;
+        color: white;
+
+    }
+    .top-nav{
+        background: transparent;
+        margin-top: 0%;
+        padding-top: 0%;
+        width: 100%;
+        height: 4em;
+    }
+    .top-nav a {
+        margin: -1% 0% 0%;
+        width: 33.33%;
+    }
+
+    .top-content img{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .top-content{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 35%;
+    }
+
+}
